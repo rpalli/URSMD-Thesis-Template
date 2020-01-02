@@ -1,9 +1,14 @@
 \documentclass[12pt,oneside]{book}  % Remove draft option to show figures (for final draft), otherwise keep for faster production
 
 \usepackage{uorthesis}  % Loads the LaTeX style package
-\usepackage[backend=biber, style=authoryear]{biblatex}
+
+% change the style here to change how references are displayed
+\usepackage[backend=biber, style=chem-acs]{biblatex}
 \addbibresource{references.bib}
-\usepackage{uorbib}
+%\usepackage{uorbib}
+
+% just to test with blind text
+\usepackage{blindtext}
 
 % Put custom packages to be loaded here
 % \usepackage{linguex}  % For linguistic examples
@@ -55,11 +60,8 @@
 
 
 \include{chapters/01-introduction}
-
 \include{chapters/02-background}
-
 \include{chapters/03-chapter}
-
 \include{chapters/04-chapter}
 
 % References
